@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "bin": "./dist/index.js",
+  "bin": {
+    "nrm": "./dist/index.js",
+    "nrm-next": "./dist/index.js"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "npm": "^7.24.2",
