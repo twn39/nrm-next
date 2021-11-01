@@ -1,8 +1,11 @@
 {
   "name": "@twn39/nrm-next",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "dist/index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "bin": {
     "nrm": "./dist/index.js",
     "nrm-next": "./dist/index.js"
