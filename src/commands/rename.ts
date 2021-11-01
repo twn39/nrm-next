@@ -1,4 +1,5 @@
-import {log} from "../utils";
+import {green, log} from "../utils";
+import {getAllRegistries, saveAllRegistries} from "../helper";
 
 export const meta = (yargs: any) => {
     yargs.positional('origin', {
@@ -11,7 +12,17 @@ export const meta = (yargs: any) => {
 }
 
 export const renameCommand = (argv: any) => {
-    log(argv.name);
+    let allRegistries = getAllRegistries();
+    const origin = allRegistries[argv.origin];
+    allRegistries = {
+        ...allRegistries,
+        [argv.name]: origin,
+    }
+
+    saveAllRegistries(allRegistries);
+    log("\r\n");
+    log(`  ${green('Registry rename success')}`);
+    log("\r\n");
 }
 
 export default {meta, command: renameCommand}

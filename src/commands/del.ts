@@ -1,4 +1,5 @@
-import {log} from "../utils";
+import {green, log} from "../utils";
+import {getAllRegistries, saveAllRegistries} from "../helper";
 
 export const meta = (yargs: any) => {
     yargs.positional('name', {
@@ -8,7 +9,13 @@ export const meta = (yargs: any) => {
 }
 
 export const delCommand = (argv: any) => {
-    log(argv.name);
+    let allRegistries = getAllRegistries();
+    delete allRegistries[argv.name];
+
+    saveAllRegistries(allRegistries);
+    log("\r\n");
+    log(`  ${green('Registry delete success')}`);
+    log("\r\n");
 }
 
 export default {meta, command: delCommand}
