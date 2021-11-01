@@ -1,13 +1,17 @@
 {
-  "name": "nrm-next",
+  "name": "@twn39/nrm-next",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": "./dist/index.js",
   "dependencies": {
     "chalk": "^4.1.2",
     "npm": "^7.24.2",
     "yargs": "^17.2.1"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^16.11.6",
     "ts-node": "^10.4.0",

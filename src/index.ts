@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {lsCommand} from "./commands/ls";
 import {currentCommand} from "./commands/current";
 import Use from './commands/use';
