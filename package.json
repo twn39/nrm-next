@@ -3,6 +3,17 @@
   "version": "1.0.2",
   "main": "dist/index.js",
   "license": "MIT",
+  "description": "a simple npm registry manager",
+  "keywords": ["nrm", "nrm-next", "registry", "registry manager", "npm"],
+  "author": "twn39 <twn39@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twn39/nrm-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twn39/nrm-next/issues"
+  },
+  "homepage": "https://github.com/twn39/nrm-next",
   "scripts": {
     "build": "tsc"
   },
