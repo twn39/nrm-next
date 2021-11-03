@@ -1,6 +1,5 @@
 import {green, log, red, blue} from "../utils";
-import {setRegistry} from "../helper";
-import registries from "../registries";
+import {getAllRegistries, setRegistry} from "../helper";
 
 export const meta = (yargs: any) => {
     yargs.positional('name', {
@@ -10,8 +9,9 @@ export const meta = (yargs: any) => {
 }
 
 export const useCommand = async(argv: any) => {
-    const registryUrl = registries[argv.name]?.registry;
-    const registryHome: any = registries[argv.name]?.home;
+    const allRegistries = getAllRegistries();
+    const registryUrl = allRegistries[argv.name]?.registry;
+    const registryHome: any = allRegistries[argv.name]?.home;
     if (!registryUrl) {
         log("\r\n");
         log(red(`  The ${argv.name} registry is not exists.`));
