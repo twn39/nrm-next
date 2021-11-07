@@ -14,18 +14,29 @@ then you can use the `nrm` or `nrm-next` command.
 
 ```shell
 npm ERR! code EEXIST
-npm ERR! syscall symlink
-npm ERR! path ../lib/node_modules/nrm-next/dist/index.js
-npm ERR! dest /Users/xxxx/.nvm/versions/node/v14.17.5/bin/nrm
-npm ERR! errno -17
-npm ERR! EEXIST: file already exists, symlink '../lib/node_modules/@twn39/nrm-next/dist/index.js' -> '/Users/xxxx/.nvm/versions/node/v14.17.5/bin/nrm'
-npm ERR! File exists: /Users/xxxx/.nvm/versions/node/v14.17.5/bin/nrm
+npm ERR! path /Users/XXX/.nvm/versions/node/v16.13.0/bin/nrm
+npm ERR! EEXIST: file already exists
+npm ERR! File exists: /Users/XXX/.nvm/versions/node/v16.13.0/bin/nrm
 npm ERR! Remove the existing file and try again, or run npm
 npm ERR! with --force to overwrite files recklessly.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/TANGW197/.npm/_logs/2021-11-07T04_29_42_563Z-debug.log
 ```
 
-if you see this error, just remove the `nrm` installed on system, and then reinstall the `nrm-next`
+if you see this error, you can just overwrite the command by add the option `--force`:
 
+```shell
+npm i nrm-next -g --force
+```
+
+or remove the `nrm` package installed on system:
+
+```shell
+npm remove nrm -g
+```
+
+and then reinstall the `nrm-next`
 
 ### Example
 
