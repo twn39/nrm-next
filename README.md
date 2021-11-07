@@ -1,5 +1,10 @@
 ## Npm registry manager
 
+[![npm](https://img.shields.io/npm/v/nrm-next?style=flat-square)](https://www.npmjs.com/package/nrm-next)
+![types](https://img.shields.io/npm/types/nrm-next?style=flat-square)
+[![mit](https://img.shields.io/npm/l/nrm-next?style=flat-square)](https://github.com/twn39/nrm-next/blob/master/LICENSE)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1e2b5972d0d9afd6ec2a/maintainability)](https://codeclimate.com/github/twn39/nrm-next/maintainability)
+
 Just npm registry manager, inspired by https://github.com/Pana/nrm ,
 simple and clean code.
 
