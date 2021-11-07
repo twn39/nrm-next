@@ -1,4 +1,4 @@
-## npm registry manager
+## Npm registry manager
 
 Just npm registry manager, inspired by https://github.com/Pana/nrm ,
 simple and clean code.
@@ -6,7 +6,7 @@ simple and clean code.
 
 ### Install
 
-    npm i @twn39/nrm-next -g
+    npm i nrm-next -g
 
 then you can use the `nrm` or `nrm-next` command.
 
@@ -15,7 +15,7 @@ then you can use the `nrm` or `nrm-next` command.
 ```shell
 npm ERR! code EEXIST
 npm ERR! syscall symlink
-npm ERR! path ../lib/node_modules/@twn39/nrm-next/dist/index.js
+npm ERR! path ../lib/node_modules/nrm-next/dist/index.js
 npm ERR! dest /Users/xxxx/.nvm/versions/node/v14.17.5/bin/nrm
 npm ERR! errno -17
 npm ERR! EEXIST: file already exists, symlink '../lib/node_modules/@twn39/nrm-next/dist/index.js' -> '/Users/xxxx/.nvm/versions/node/v14.17.5/bin/nrm'
